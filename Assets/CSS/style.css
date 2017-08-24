@@ -1,0 +1,269 @@
+/*
+    style.css for HW01_Basic-Portfolio
+    Bo Slott
+    August 26, 2017
+*/
+
+
+
+/*  Typograph  */
+
+    body, input, select, textarea, button {
+        font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+        color: #777777;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Georgia", Times, Times New Roman, serif;
+    }
+
+
+/*  Structure  */
+
+    /* Set the width of the main page elements */
+
+    .site-header, .site-content, .site-footer {
+        width: 960px;
+        margin: auto;
+    }
+
+
+        /* Site Header  */
+
+            .site-header-outer {
+                background-color: #ffffff;
+                border-style: solid;
+                border-color: #cccccc;
+                border-width: 0 0 2px 0;
+            }
+
+                .logo {
+                    background-color: #4aaaa5;
+                    color: #ffffff;
+                    font-size: 28px;
+                    font-weight: bold;
+                    padding: 30px;
+                    float: left;
+                    margin: auto;
+                }
+
+                .site-navigation {
+                    float: right;
+                    padding: 30px;
+                    margin: auto;
+                }
+
+                .site-navigation li {
+                    display: inline-block;
+                }
+
+                .site-navigation a:link, a:visited {
+                    background-color: #ffffff;
+                    color: #777777;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 20px;
+                    font-weight: normal;
+                }
+
+                .site-navigation a:hover, a:active {
+                    background-color: #ebebeb;
+                }
+
+        /*  Site Content  */
+
+            .site-content-outer {
+                clear: both;
+                overflow: auto;
+                background-image: url("../Images/HW01_Basic-Portfolio_BG-Textured-Img.png");
+            }
+
+            /* Site Content Boxes - About-Me, Portfolio, Contact */
+
+                .about-me-box, .portfolio-box, .contact-me-box {
+                    width: 650px;
+                    margin: 30px 30px 30px 0;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: #dddddd;
+                    background-color: #fff;
+                    float: left;
+                }
+
+                    /* Site Content Headers */
+                        .about-me-header, .portfolio-box-header, .contact-me-header {
+                            margin: 20px 30px;
+                            color: #4aaaa5;
+                            font-size: 28px;
+                            padding: 15px 10px 15px 0;
+                            border-style: solid;
+                            border-width: 0 0 2px 0;
+                            border-color: #dddddd;
+                        }
+
+                    /* Site Content - About Me Content */
+                        .about-me-content img {
+                            float: left;
+                            margin: 0px 30px;
+                            display: inline-block;
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .about-me-content p {
+                            color: #777777;
+                            font-size: 20px;
+                            line-height: 2;
+                            margin: 0 10px 20px 30px;
+                            padding-right: 15px;
+
+                        }
+
+                    /* Site Content - Porfolio Content */
+
+                        .portfolio-box-content {
+                            margin: 0 auto;
+                            
+                        }
+
+                        .portfolio-projects-thumbs {
+                            
+                            float: left;
+                            width: 40%;
+                            margin: 32px;
+                            position: relative;
+                            
+                        }
+
+                         .portfolio-projects-thumbs img {
+                            width: 100%;
+                            position: relative;
+                         }
+
+                        .portfolio-projects-thumbs-header {
+                            position: absolute;
+                            bottom: 15px;
+                            padding: 10px;
+                            background-color: #4aaaa5;
+                            width: 92.2%;
+                            color: #fff;
+                            text-align: center;
+                        }
+
+                    /* Site Content - Contact Me Form */
+
+                        .contact-me-form {
+                            margin: 0 auto;
+                            padding: 30px;
+                            font-size: 18px;
+                        }
+
+                        input[type=text] {
+                            width: 90%;
+                            padding: 10px;
+                            margin: 5px auto;
+                            outline: none;
+                            border-radius: 4px;
+                        }
+
+                        input[type=text]:focus {
+                            background-color: #eeffff;
+                        }
+
+                        textarea {
+                            width: 90%
+                            padding: 10px;
+                            margin: 5px auto;
+                            outline: none;
+                            border-radius: 4px;
+                            resize: none;
+                        }
+
+                        textarea:focus {
+                            background-color: #eeffff;
+                        }
+
+                        input[type=submit], input[type=reset] {
+                            background-color: #4aaaa5;
+                            border: none;
+                            color: #fff;
+                            padding: 10px 20px;
+                            margin: 5px; auto;
+                            cursor: pointer;
+                            font-size: 18px;
+                        }
+
+
+
+            /* Aside Box - Connect With Me */
+
+                .social-box {
+                    width: 270px;
+                    margin: 30px 0;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: #dddddd;
+                    background-color: #fff;
+                    float: left;
+                }
+
+                    .social-box-header {
+                        font-size: 22px;
+                        color: #4aaaa5;
+                        margin: 20px;
+                        padding: 15px 0;
+                        border-style: solid;
+                        border-width: 0 0 1px;
+                        border-color: #dddddd;
+                        text-align:center;
+                    }
+
+                    .social-box-buttons {
+                        padding: 0 0 30px 11px;
+                    }
+
+                    .social-box-buttons li {
+                        display: inline-block;
+                        margin: 0 10px;
+                    }
+                    
+
+
+
+        /*  Site Footer  */
+
+            .site-footer-outer {
+                background-color: #777777;
+                border-style: solid;
+                border-width: 7px 0 0;
+                border-color: #4aaaa5;
+                position: absolute;
+                width: 100%;
+            }
+
+                .site-footer-copyright {
+                    color: #cccccc;
+                    font-size: 14px;
+                    text-align: center;
+                    padding: 40px;
+                }
+
+
+
+/*  General Use  */
+
+    .group:after {
+        content: "";
+        display: table;
+        clear: both;
+        overflow: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
